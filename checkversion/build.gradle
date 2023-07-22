@@ -56,21 +56,24 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.gucheng.VersionCheck'
-                artifactId = 'versioncheck'
-                version = '1.0'
+                groupId = 'com.gucheng.github3116'
+                artifactId = 'version-check'
+                version = '1.0.4'
             }
             // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = 'com.gucheng.VersionCheck'
-                artifactId = 'versioncheck'
-                version = '1.0'
-            }
+//            debug(MavenPublication) {
+//                // Applies the component for the debug build variant.
+//                from components.debug
+//
+//                groupId = 'com.gucheng.github3116'
+//                artifactId = 'version-check'
+//                version = '1.0.4'
+//            }
         }
     }
 }
+
+group 'com.github.gucheng3116'
+version '1.0.4'
 
 //version '1.0.0'
